@@ -4,11 +4,11 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import userService from '../../utils/userService';
-
 import './App.css';
+import userService from '../../utils/userService';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
+import MainPage from '../MainPage/MainPage';
 
 class App extends Component {
   handleSignupOrLogin = () => {
@@ -31,7 +31,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path='/' render={() =>
-              <div>Hi</div> 
+              <MainPage />
             } />
             <Route exact path='/signup' render={({history}) => 
               <SignupPage
