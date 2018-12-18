@@ -9,6 +9,7 @@ class MainPage extends Component {
             <div className="MainPage">
                 <NavBar 
                     user={this.props.user}
+                    handleLogout={this.props.handleLogout}
                 />
             </div>           
         )

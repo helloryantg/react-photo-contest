@@ -5,28 +5,26 @@ import { Link } from 'react-router-dom';
 const NavBar = (props) => (
     <div className="NavBar">
         <div>
-            <button>Like.</button>        
+            <div>Like.</div>        
         </div>
 
-        <div>
-            <button>Contests</button>
-            <button>{props.user.name}</button>
-            <button></button>
-        </div>
-        
-        {props.user ? 
-            <div>
-                <Link to='/logout'>Logout</Link> 
-                <div>User not present</div>
+        {!props.user ? 
+            <div className="flexed_row_center">
+                <div>Contests</div>
+                |
+                <Link to='/login'>Login</Link>
+                |
+                <Link to='/signup'>Signup</Link>
             </div>
         :
-            <div>
-                <Link to='/login'>Login</Link>
-                <div>User present</div>
+            <div className="flexed_row_center">
+                <div>Contests</div>
+                |
+                <div>Hi, {props.user.name}!</div>
+                |
+                <Link to='' onClick={props.handleLogout}>Logout</Link>
             </div>
         }
-        {/* <Link to='/signup'>Signup</Link> */}
-
     </div>
 );
 

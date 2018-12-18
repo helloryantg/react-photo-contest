@@ -40,6 +40,7 @@ class App extends Component {
             <Route exact path='/' render={() =>
               <MainPage 
                 user={this.state.user}
+                handleLogout={this.handleLogout}
               />
             } />
             <Route exact path='/signup' render={({history}) => 
