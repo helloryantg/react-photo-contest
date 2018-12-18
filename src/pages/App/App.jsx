@@ -11,6 +11,13 @@ import LoginPage from '../LoginPage/LoginPage';
 import MainPage from '../MainPage/MainPage';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: null
+    }
+  }
+
   handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
   }
@@ -31,7 +38,9 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path='/' render={() =>
-              <MainPage />
+              <MainPage 
+                user={this.state.user}
+              />
             } />
             <Route exact path='/signup' render={({history}) => 
               <SignupPage

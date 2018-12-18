@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import './MainPage.css';
-import { Link } from 'react-router-dom';
+import NavBar from '../../components/NavBar/NavBar';
 
 class MainPage extends Component {
 
     render() {
         return (
-            <div>
-                <Link to='/login'>Login</Link>
-                <Link to='/signup'>Signup</Link>
-            </div>
+            <div className="MainPage">
+                <NavBar 
+                    user={this.props.user}
+                />
+            </div>           
         )
     }    
 }
