@@ -13,7 +13,8 @@ CATEGORIES = (
 const contestSchema = new Schema({
     title: String,
     description: String,
-    startDate: Date,
+    startDate: { type: Date, default: Date.now },
+    endDate: Date,
     img: { data: Buffer, contentType: String },
     posts: [postSchema]
 }, {

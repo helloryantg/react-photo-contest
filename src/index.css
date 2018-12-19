@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 1px solid red;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -15,6 +19,13 @@ code {
 
 .flexed_row_center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexed_column_center {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

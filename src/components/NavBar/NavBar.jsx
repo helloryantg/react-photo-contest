@@ -9,7 +9,7 @@ const NavBar = (props) => (
         </div>
 
         {!props.user ? 
-            <div className="flexed_row_center">
+            <div className="flexed_row_center right_side">
                 <div>Contests</div>
                 |
                 <Link to='/login'>Login</Link>
@@ -17,7 +17,7 @@ const NavBar = (props) => (
                 <Link to='/signup'>Signup</Link>
             </div>
         :
-            <div className="flexed_row_center">
+            <div className="flexed_row_center right_side">
                 <div>Contests</div>
                 |
                 <div>Hi, {props.user.name}!</div>

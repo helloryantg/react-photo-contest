@@ -8,3 +8,8 @@
 .NavBar {
     padding: 20px;
 }
+
+.NavBar .right_side {
+    width: 300px;
+    justify-content: space-between;
+}

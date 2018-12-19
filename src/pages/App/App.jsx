@@ -9,12 +9,14 @@ import userService from '../../utils/userService';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import MainPage from '../MainPage/MainPage';
+import contestService from '../../utils/contestService';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null
+      user: null,
+      contest: null
     }
   }
 
@@ -27,6 +29,13 @@ class App extends Component {
     this.setState({user: null});
   }
 
+  handleCreateContest = (e) => {
+    e.preventDefault();
+    let newContest = contestService.createContest();
+    this.setState({contest: this.state.contest.push(newContest)});
+  }
+
+  /*----- LifeCycles -----*/
   componentDidMount() {
     let user = userService.getUser();
     this.setState({user});
@@ -41,6 +50,7 @@ class App extends Component {
               <MainPage 
                 user={this.state.user}
                 handleLogout={this.handleLogout}
+                handleCreateContest={this.handleCreateContest}
               />
             } />
             <Route exact path='/signup' render={({history}) => 
