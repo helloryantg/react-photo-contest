@@ -14,3 +14,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --header-height: 40px;
+  --categories-height: 60px;
+  --photo-list-height-percentage: 80%;
+  --footer-height: calc(100% - --header-height - --categories-height - --photo-list-height-percentage);
+
+  --padding-small: 4px;
+  --padding-normal: 8px;
+  --padding-large: 12px;
+}

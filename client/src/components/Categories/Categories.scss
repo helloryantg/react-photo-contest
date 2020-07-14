@@ -1,13 +1,20 @@
 .Categories {
-  height: 60px;
+  height: var(--categories-height);
   display: flex;
   justify-content: center;
   align-items: center;
 
   & > .categories-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-normal);
 
     & > .category {
-      
+      margin: 8px;
+      cursor: pointer;
     }
   }
 }
