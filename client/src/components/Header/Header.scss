@@ -3,5 +3,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--padding-normal);
+  padding: var(--padding-medium);
+
+  & > .name {
+    margin: var(--margin-medium);
+  }
+
+  & > .settings {
+    display: flex;
+    align-items: center;
+
+    & > .setting {
+      margin: var(--margin-medium);
+
+      & > a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
 }
