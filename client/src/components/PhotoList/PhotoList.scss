@@ -3,4 +3,7 @@
   height: var(--photo-list-height-percentage);
   background-color: lightgrey;
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
 }

@@ -1,6 +1,14 @@
 .Photo {
-  height: 30%;
-  background: black;
-  margin: var(--margin-large);
-  flex-basis: 20%;
+  height: 280px;
+  width: 380px;
+  margin: var(--margin-large) auto;
+
+  & > .item {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
 }
