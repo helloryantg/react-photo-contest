@@ -13,6 +13,9 @@ function PhotoList(props) {
       <Photo />
       <Photo />
       <Photo />
+      <Photo />
+      <Photo />
+      <Photo />
     </div>
   );
 }
