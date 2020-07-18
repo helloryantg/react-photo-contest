@@ -9,13 +9,6 @@ function PhotoList(props) {
   return (
     <div className="PhotoList">
       <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
     </div>
   );
 }
