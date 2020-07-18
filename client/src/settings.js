@@ -1,5 +1,8 @@
 export const contestCategories = [
-  'People',
-  'Things',
-  'Places'
+  'Nature',
+  'Food',
+  'Animals',
+  'Structure/Objects',
+  'People/Life',
+  'Humor'
 ];
