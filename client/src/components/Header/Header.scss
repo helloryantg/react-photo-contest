@@ -7,11 +7,16 @@
 
   & > .name {
     margin: var(--margin-medium);
+    font-size: 200%;
+    font-weight: 600;
+    color: var(--color-main-blue);
+    cursor: pointer;
   }
 
   & > .settings {
     display: flex;
     align-items: center;
+    font-size: 110%;
 
     & > .setting {
       margin: var(--margin-medium);
